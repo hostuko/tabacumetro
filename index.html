@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Tabac du Métro - Antony | Bar, Tabac, FDJ & PMU</title>
+    <meta name="description" content="Bienvenue au Tabac du Métro à Antony. Bar chic, large choix de tabac, presse, services FDJ et PMU. Ouvert 7j/7 au 79 Rue Mirabeau.">
+    <meta name="keywords" content="Tabac Antony, Bar Antony, PMU Antony, FDJ, Presse, Rue Mirabeau, Tabac du Métro">
+    <meta name="author" content="Tabac du Métro">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="Tabac du Métro - Antony | Bar & Tabac">
+    <meta property="og:description" content="Votre quotidien simplifié à Antony : Bar, Tabac, FDJ et Presse.">
+    <meta property="og:image" content="images/ChatGPT Image 9 oct. 2025, 15_03_16-Photoroom.png">
+    <meta property="og:url" content="https://www.tabacdumetro-antony.fr">
+    <meta property="og:type" content="website">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TobaccoShop",
+      "name": "Tabac du Métro",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "79 Rue Mirabeau",
+        "addressLocality": "Antony",
+        "postalCode": "92160",
+        "addressCountry": "FR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 48.7523,
+        "longitude": 2.3088
+      },
+      "telephone": "+33146660713",
+      "openingHours": "Mo-Fr 06:30-20:30, Sa 07:00-20:30, Su 08:00-20:30"
+    }
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bar-red: rgb(110, 20, 20);
+            --gold: #c5a059;
+            --gold-subtle: #b38e4d;
+            --dark: #0f0f0f;
+            --white: #ffffff;
+            --gray-light: #f9f9f9;
+        }
+
+        html { scroll-behavior: smooth; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--white);
+            padding-top: 110px;
+        }
+
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+
+        /* Navigation Responsive */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 5%;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(15, 15, 15, 0.98);
+            z-index: 1001;
+            border-bottom: 2px solid var(--gold);
+        }
+
+        .logo-img { height: 90px; width: auto; border-radius: 50%; transition: 0.3s; }
+        .logo-container:hover { transform: scale(1.05); }
+
+        .nav-links { display: flex; list-style: none; }
+        .nav-links li { margin-left: 30px; }
+        .nav-links a {
+            text-decoration: none;
+            color: var(--white);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: 0.3s;
+        }
+        .nav-links a:hover { color: var(--gold); }
+
+        /* Bannière défilante */
+        .promo-banner {
+            position: fixed;
+            top: 112px;
+            width: 100%;
+            background: var(--bar-red);
+            color: var(--gold);
+            overflow: hidden;
+            white-space: nowrap;
+            padding: 8px 0;
+            z-index: 1000;
+            border-bottom: 1px solid var(--gold);
+        }
+
+        .promo-banner a {
+            display: inline-block;
+            color: var(--gold);
+            text-decoration: none;
+            font-weight: 600;
+            letter-spacing: 3px;
+            font-size: 0.9rem;
+            animation: scroll-left 25s linear infinite;
+        }
+
+        @keyframes scroll-left {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        /* Hero Section */
+        .hero {
+            height: calc(100vh - 110px);
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/bar.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: var(--white);
+            padding: 0 20px;
+            border-bottom: 8px solid var(--bar-red);
+        }
+
+        .hero h1 { font-size: clamp(2.5rem, 8vw, 5rem); color: var(--gold); margin-bottom: 15px; }
+        .hero p { font-size: clamp(1rem, 3vw, 1.5rem); letter-spacing: 4px; text-transform: uppercase; margin-bottom: 30px; }
+
+        .btn {
+            padding: 18px 45px;
+            background: transparent;
+            color: var(--white);
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            border: 1px solid var(--gold);
+            transition: 0.4s ease;
+        }
+        .btn:hover { background: var(--bar-red); border-color: var(--bar-red); box-shadow: 0 0 15px rgba(110, 20, 20, 0.4); }
+
+        /* Services */
+        section#services { padding: 80px 5%; text-align: center; }
+        .section-title { font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 50px; color: var(--bar-red); }
+        .section-title span { display: block; font-size: 0.9rem; font-family: 'Montserrat'; color: var(--gold); text-transform: uppercase; letter-spacing: 5px; margin-bottom: 10px; }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .service-card {
+            padding: 40px 20px;
+            background: var(--gray-light);
+            border-top: 4px solid var(--bar-red);
+            transition: 0.4s ease;
+        }
+        .service-card:hover { transform: translateY(-10px); background: var(--dark); color: var(--white); }
+        .service-card i { font-size: 2.5rem; color: var(--gold); margin-bottom: 20px; }
+
+        /* Contact & Map */
+        .info-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            background: var(--dark);
+            color: var(--white);
+        }
+        .info-text { padding: 60px 10%; }
+        .info-text h2 { color: var(--gold-subtle); margin-bottom: 30px; }
+        .info-item { margin-bottom: 25px; }
+        .info-item h4 { color: var(--bar-red); text-transform: uppercase; font-size: 0.8rem; margin-bottom: 5px; }
+        .info-item a { color: #ccc; text-decoration: none; transition: 0.3s; }
+        .info-item a:hover { color: var(--gold); text-decoration: underline; }
+
+        .map-box { min-height: 400px; width: 100%; }
+        .map-box iframe { width: 100%; height: 100%; border: 0; }
+
+        /* Footer & Mentions */
+        footer { padding: 50px 5% 20px; background: #080808; color: var(--white); text-align: center; }
+        .footer-brand { color: var(--gold); font-family: 'Playfair Display'; font-size: 1.5rem; margin-bottom: 20px; display: block; }
+        .legal-links { margin-bottom: 20px; }
+        .legal-links a { color: #777; font-size: 0.8rem; margin: 0 10px; text-decoration: none; }
+        .legal-links a:hover { color: var(--gold); }
+        
+        .footer-bottom {
+            border-top: 1px solid #222;
+            padding-top: 20px;
+            font-size: 0.7rem;
+            color: #555;
+            text-transform: uppercase;
+            line-height: 1.8;
+        }
+        .warning { color: #888; font-style: italic; margin-top: 10px; display: block; }
+
+        /* Media Queries pour Mobile Extrême */
+        @media (max-width: 768px) {
+            body { padding-top: 90px; }
+            nav { padding: 5px 5%; }
+            .logo-img { height: 70px; }
+            .promo-banner { top: 82px; }
+            .nav-links { display: none; } /* On pourrait ajouter un menu burger en JS ici */
+            .info-text { padding: 40px 5%; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#accueil" class="logo-container">
+            <img src="images/ChatGPT Image 9 oct. 2025, 15_03_16-Photoroom.png" alt="Tabac du Métro Antony" class="logo-img">
+        </a>
+        <ul class="nav-links">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#services">Nos Prestations</a></li>
+            <li><a href="#contact">Nous trouver</a></li>
+        </ul>
+    </nav>
+
+    <div class="promo-banner">
+        <a href="#contact">PROMO JNR • PROMO JNR • PROMO JNR • PROMO JNR • PROMO JNR • PROMO JNR • PROMO JNR • PROMO JNR • PROMO JNR</a>
+    </div>
+
+    <header class="hero" id="accueil">
+        <p>Tradition & Élégance</p>
+        <h1>L'Expérience Bar-Tabac</h1>
+        <a href="#contact" class="btn">Nous trouver</a>
+    </header>
+
+    <section id="services">
+        <h2 class="section-title"><span>Découvrez</span>Nos Prestations</h2>
+        <div class="services-grid">
+            <article class="service-card">
+                <i class="fas fa-smoking"></i>
+                <h3>Tabac & Presse</h3>
+                <p>Cigarettes, cigares et presse quotidienne.</p>
+            </article>
+            <article class="service-card">
+                <i class="fas fa-euro-sign"></i>
+                <h3>FDJ & PMU</h3>
+                <p>Loto, EuroMillions et paris hippiques en direct.</p>
+            </article>
+            <article class="service-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Services</h3>
+                <p>Timbres, recharges et papeterie de proximité.</p>
+            </article>
+            <article class="service-card">
+                <i class="fas fa-coffee"></i>
+                <h3>Café & Boissons</h3>
+                <p>Pause détente dans notre espace bar raffiné.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="info-container" id="contact">
+        <div class="info-text">
+            <h2>Nous Trouver</h2>
+            <div class="info-item">
+                <h4>Adresse</h4>
+                <p><a href="https://www.google.com/maps/dir//Tabac+du+Métro,+79+Rue+Mirabeau,+92160+Antony" target="_blank">
+                    79 Rue Mirabeau, 92160 Antony
+                </a></p>
+            </div>
+            <div class="info-item">
+                <h4>Horaires d'exception</h4>
+                <p>Lundi — Vendredi : 06h30 - 20h30<br>
+                Samedi : 07h00 - 20h30<br>
+                Dimanche : 08h00 - 20h30</p>
+            </div>
+            <div class="info-item">
+                <h4>Contact</h4>
+                <p><a href="tel:0146660713">01 46 66 07 13</a></p>
+            </div>
+        </div>
+        <div class="map-box">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2631.789189914757!2d2.3065961768407987!3d48.7525330084534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e677727e0586e9%3A0x28059083236e864b!2sTabac%20du%20M%C3%A9tro!5e0!3m2!1sfr!2sfr!4v1715612345678!5m2!1sfr!2sfr" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <span class="footer-brand">Tabac du Métro</span>
+        <div class="legal-links">
+            <a href="#">Mentions Légales</a>
+            <a href="#">Politique de Confidentialité</a>
+            <a href="#">Gestion des Cookies</a>
+        </div>
+        <div class="footer-bottom">
+            © 2024 Tabac du Métro Antony - Tous droits réservés.<br>
+            SNC CAI & CO | SIRET : 49867551100030 | TVA : FR07498675511<br>
+            <span class="warning">La vente de tabac et de jeux d'argent est interdite aux mineurs. L'abus d'alcool est dangereux pour la santé, à consommer avec modération. Jouer comporte des risques : endettement, dépendance... Appelez le 09 74 75 13 13.</span>
+        </div>
+    </footer>
+
+</body>
+</html>
